@@ -1,6 +1,22 @@
-<h1>Currency pairs</h1>
-<ul>
-  <% @currencies.each do |symbol, name| %>
-    <li><a href="/<%= symbol %>"><%= symbol %></a></li>
-  <% end %>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target: Exchange Rates</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <h1>Currency pairs</h1>
+    <ul>
+      <% currencies = ["AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN"] %>
+      <% currencies.each do |currency| %>
+        <li>
+          <a href="/<%= currency %>">
+            Convert 1 <%= currency %> to...
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
+

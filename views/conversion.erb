@@ -1,3 +1,13 @@
-<h1>Convert <%= @from_currency %> to <%= @to_currency %></h1>
-<p>1 <%= @from_currency %> equals <%= @rate %> <%= @to_currency %>.</p>
-<a href="/<%= @from_currency %>">Back</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target: Exchange Rates</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <h1>Convert <%= @base_currency %> to <%= @target_currency %></h1>
+    <p>Conversion form goes here...</p>
+    <p>Go <a href="/<%= @base_currency %>">back</a>.</p>
+  </body>
+</html>
